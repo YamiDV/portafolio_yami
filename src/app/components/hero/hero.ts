@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { LinkButton } from '../../shared/components/link-button/link-button';
 
 @Component({
-  imports: [],
+  imports: [LinkButton],
   selector: 'app-hero',
   styleUrl: './hero.css',
   templateUrl: './hero.html',

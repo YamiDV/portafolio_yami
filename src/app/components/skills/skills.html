@@ -1,0 +1,19 @@
+<section class="skills" id="skills">
+
+    <div class="skills-container">
+
+        <h2>Skills</h2>
+
+        <div class="cards">
+
+            @for (category of categories; track category.title) {
+
+            <app-skill-card [title]="category.title" [skills]="category.skills" />
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
