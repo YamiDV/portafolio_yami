@@ -22,6 +22,7 @@
     "@ng-icons/bootstrap-icons": "^36.0.0",
     "@ng-icons/core": "^36.0.0",
     "@ng-icons/devicon": "^36.0.0",
+    "@ng-icons/heroicons": "^36.0.0",
     "@ng-icons/simple-icons": "^36.0.0",
     "devicon": "^2.17.0",
     "rxjs": "~7.8.0",

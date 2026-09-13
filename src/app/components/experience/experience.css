@@ -1,0 +1,140 @@
+.experience {
+  padding: 100px 60px;
+  background: transparent;
+  
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.experience-container > h2 {
+  font-size: 2.2rem;
+  margin-bottom: 45px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.experience-item {
+  position: relative;
+
+  display: flex;
+
+  gap: 20px;
+
+  padding-bottom: 40px;
+}
+
+.experience-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 14px;
+  top: 32px;
+  bottom: -5px;
+
+  width: 1px;
+
+  background: #2d3342;
+}
+
+.experience-item:last-child::before {
+  display: none;
+}
+
+.timeline-marker {
+  width: 30px;
+  height: 30px;
+
+  min-width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #1b2230;
+  border: 1px solid #374151;
+
+  font-size: 13px;
+
+  z-index: 1;
+}
+.timeline-marker ng-icon {
+  color: #cbd5e1;
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+
+  margin: 0;
+}
+
+.experience-header h3 {
+  margin: 0;
+
+  color: #60a5fa;
+  font-size: 1.15rem;
+}
+
+.company {
+  color: #d4a373;
+}
+
+.client {
+  display: block;
+
+  margin-top: 4px;
+  margin-left: 0;
+}
+
+.period {
+  display: block;
+
+  margin-top: 8px;
+  margin-left: 0;
+}
+
+.experience-description {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.experience-description li {
+  padding-left: 0;
+  margin-bottom: 8px;
+
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+  .experience {
+    padding: 70px 20px;
+  }
+
+  .experience-container > h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .experience-item {
+    gap: 14px;
+  }
+
+  .experience-content p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}

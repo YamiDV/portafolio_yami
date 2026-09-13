@@ -1,0 +1,64 @@
+<section class="experience" id="experience">
+
+  <div class="experience-container">
+
+    <h2>Experiencia</h2>
+
+    <div class="timeline">
+
+      @for (item of experiences; track item.period) {
+
+        <div class="experience-item">
+
+          <div class="timeline-marker">
+            <ng-icon
+              name="heroBriefcase"
+              size="16">
+            </ng-icon>
+          </div>
+
+          <div class="experience-content">
+
+            <div class="experience-header">
+
+              <h3>
+                {{ item.role }}
+              </h3>
+
+              <span class="company">
+                {{ item.company }}
+              </span>
+
+            </div>
+
+            @if (item.client) {
+              <span class="client">
+                Cliente: {{ item.client }}
+              </span>
+            }
+
+            <span class="period">
+              {{ item.period }}
+            </span>
+
+            <ul class="experience-description">
+
+              @for (point of item.description; track point) {
+                <li>
+                  {{ point }}
+                </li>
+              }
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
