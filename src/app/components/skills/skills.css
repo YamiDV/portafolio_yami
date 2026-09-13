@@ -25,3 +25,20 @@
 
   gap: 24px;
 }
+
+@media (max-width: 768px) {
+
+  .skills {
+    padding: 70px 20px;
+  }
+
+  .skills-container > h2 {
+    font-size: 2rem;
+    margin-bottom: 28px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
