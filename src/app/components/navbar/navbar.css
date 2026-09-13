@@ -67,3 +67,40 @@
     text-decoration: none;
     color: white;
 }
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 72px;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+    font-size: 1.8rem;
+
+    cursor: pointer;
+  }
+
+  .logo-img {
+    width: 42px;
+    height: 42px;
+  }
+}

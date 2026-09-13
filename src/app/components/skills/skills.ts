@@ -32,23 +32,35 @@ export class Skills {
   ];
 
   backend: Skill[] = [
-    {
-      name: 'Java',
-      icon: 'devicon-java-plain colored'
-    },
-    {
-      name: 'JavaScript',
-      icon: 'devicon-javascript-plain colored'
-    },
-    {
-      name: 'Spring Boot',
-      icon: 'devicon-spring-plain colored'
-    },
-    {
-      name: 'PostgreSQL',
-      icon: 'devicon-postgresql-plain colored'
-    }
-  ];
+  {
+    name: 'Java',
+    icon: 'devicon-java-plain colored'
+  },
+  {
+    name: 'JavaScript',
+    icon: 'devicon-javascript-plain colored'
+  },
+  {
+    name: 'Spring Boot',
+    icon: 'devicon-spring-plain colored'
+  },
+  {
+    name: 'PostgreSQL',
+    icon: 'devicon-postgresql-plain colored'
+  },
+  {
+    name: 'MongoDB',
+    icon: 'devicon-mongodb-plain colored'
+  },
+  {
+    name: 'Python',
+    icon: 'devicon-python-plain colored'
+  },
+  {
+    name: 'Kafka',
+    icon: 'devicon-apachekafka-original colored'
+  }
+];
 
   tools: Skill[] = [
     {
@@ -81,13 +93,14 @@ export class Skills {
   ];
 
   categories = [
-    {
-      title: 'Frontend',
-      skills: this.frontend
-    },
+    
     {
       title: 'Backend',
       skills: this.backend
+    },
+    {
+      title: 'Frontend',
+      skills: this.frontend
     },
     {
       title: 'Herramientas',
