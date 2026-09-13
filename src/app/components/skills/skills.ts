@@ -1,103 +1,102 @@
 import { Component } from '@angular/core';
-import { SkillCard, Skill } from '../../shared/components/skill-card/skill-card';
+import {
+  SkillCard,
+  Skill
+} from '../../shared/components/skill-card/skill-card';
 
 @Component({
-  imports: [SkillCard],
   selector: 'app-skills',
-  styleUrl: './skills.css',
+  imports: [SkillCard],
   templateUrl: './skills.html',
+  styleUrl: './skills.css'
 })
 export class Skills {
 
   frontend: Skill[] = [
     {
       name: 'HTML',
-      icon: '/skills/html.svg'
+      icon: 'devicon-html5-plain colored'
     },
     {
       name: 'CSS',
-      icon: '/skills/css.svg'
+      icon: 'devicon-css3-plain colored'
     },
     {
       name: 'Angular',
-      icon: '/skills/angular.svg'
+      icon: 'devicon-angularjs-plain colored'
     },
     {
       name: 'TypeScript',
-      icon: '/skills/typescript.svg'
+      icon: 'devicon-typescript-plain colored'
     }
   ];
 
   backend: Skill[] = [
     {
       name: 'Java',
-      icon: '/skills/java.svg'
+      icon: 'devicon-java-plain colored'
+    },
+    {
+      name: 'JavaScript',
+      icon: 'devicon-javascript-plain colored'
     },
     {
       name: 'Spring Boot',
-      icon: '/skills/spring.svg'
+      icon: 'devicon-spring-plain colored'
     },
     {
       name: 'PostgreSQL',
-      icon: '/skills/postgresql.svg'
+      icon: 'devicon-postgresql-plain colored'
     }
   ];
 
   tools: Skill[] = [
     {
       name: 'Git',
-      icon: '/skills/git.svg'
+      icon: 'devicon-git-plain colored'
     },
     {
       name: 'GitHub',
-      icon: '/skills/github.svg'
+      icon: 'devicon-github-original'
     },
     {
       name: 'Docker',
-      icon: '/skills/docker.svg'
+      icon: 'devicon-docker-plain colored'
     },
     {
       name: 'VS Code',
-      icon: '/skills/vscode.svg'
+      icon: 'devicon-vscode-plain colored'
     }
   ];
 
   learning: Skill[] = [
     {
-      name: 'Git',
-      icon: '/skills/git.svg'
+      name: 'AWS',
+      icon: 'devicon-amazonwebservices-plain-wordmark colored'
     },
     {
-      name: 'GitHub',
-      icon: '/skills/github.svg'
-    },
-    {
-      name: 'Docker',
-      icon: '/skills/docker.svg'
-    },
-    {
-      name: 'VS Code',
-      icon: '/skills/vscode.svg'
+      name: 'Azure',
+      icon: 'devicon-azure-plain colored'
     }
   ];
 
   categories = [
-  {
-    title: 'Frontend',
-    skills: this.frontend
-  },
-  {
-    title: 'Backend',
-    skills: this.backend
-  },
-  {
-    title: 'Herramientas',
-    skills: this.tools
-  },
-  {
-    title: 'Aprendiendo',
-    skills: this.learning
-  }
-];
+    {
+      title: 'Frontend',
+      skills: this.frontend
+    },
+    {
+      title: 'Backend',
+      skills: this.backend
+    },
+    {
+      title: 'Herramientas',
+      skills: this.tools
+    },
+    {
+      title: 'Aprendiendo',
+      skills: this.learning
+    }
+  ];
 
 }

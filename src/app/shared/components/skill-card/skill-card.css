@@ -46,6 +46,10 @@
   gap: 25px;
 }
 
+.skill-icon {
+  font-size: 42px;
+}
+
 .skill-item {
   display: flex;
   flex-direction: column;
@@ -66,9 +70,6 @@
   transform: translateY(-3px);
 }
 
-.skill-item img {
-  width: 42px;
-  height: 42px;
-
-  object-fit: contain;
+.skill-item:hover .skill-icon {
+  transform: scale(1.1);
 }
