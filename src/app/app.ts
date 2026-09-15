@@ -3,6 +3,7 @@ import { Navbar } from './components/navbar/navbar';
 import { Hero } from './components/hero/hero';
 import { Skills } from './components/skills/skills';
 import { Experience } from './components/experience/experience';
+import { Projects } from './components/projects/projects';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { Experience } from './components/experience/experience';
     Navbar,
     Hero,
     Skills,
-    Experience
+    Experience,
+    Projects
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'
